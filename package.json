@@ -1,5 +1,5 @@
 {
-  "name": "debouncer",
+  "name": "debouncer-factory",
   "version": "1.0.0",
   "description": "Factory function that returns debounce function",
   "main": "src/index.js",
