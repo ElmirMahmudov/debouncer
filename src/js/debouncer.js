@@ -11,4 +11,5 @@ const debouncer = (func, time) => {
 		startFunc(arg);
 	}
 }
+
 module.exports = debouncer;
