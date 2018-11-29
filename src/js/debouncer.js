@@ -5,7 +5,7 @@ const debouncer = (func, time) => {
 				func.apply(this, args);
 			}, time);
 		};
-	return (e) => {
+	return () => {
 		const arg = arguments
 		clearTimeout(timeoutFunc);
 		startFunc(arg);
