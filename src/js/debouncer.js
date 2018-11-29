@@ -6,7 +6,7 @@ const debouncer = (func, time) => {
 			}, time);
 		};
 	return () => {
-		const arg = arguments
+		const arg = arguments;
 		clearTimeout(timeoutFunc);
 		startFunc(arg);
 	}
