@@ -8,7 +8,7 @@ const debouncer = (func, time) => {
 	return (e) => {
 		const arg = arguments
 		clearTimeout(timeoutFunc);
-		startFunc(arg)
+		startFunc(arg);
 	}
 }
 module.exports = debouncer;
