@@ -1,14 +1,17 @@
 {
   "name": "debouncer-factory",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Factory function that returns debounce function",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElmirMahmudov/debouncer.git"
+    "url": "https://github.com/ElmirMahmudov/debouncer.git"
   },
   "keywords": [
     "Factory",
@@ -23,5 +26,16 @@
   "bugs": {
     "url": "https://github.com/ElmirMahmudov/debouncer/issues"
   },
-  "homepage": "https://github.com/ElmirMahmudov/debouncer#readme"
+  "homepage": "https://github.com/ElmirMahmudov/debouncer#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "commitizen": "3.0.5",
+    "cz-conventional-changelog": "2.1.0",
+    "mocha": "5.2.0",
+    "semantic-release": "^15.12.2",
+    "travis-deploy-once": "^5.0.9"
+  },
+  "czConfig":{
+    "path": "node_modules/cz-conventional-changelog"
+  }
 }
