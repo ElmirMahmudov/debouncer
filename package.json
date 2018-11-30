@@ -32,6 +32,7 @@
     "chai": "4.2.0",
     "commitizen": "3.0.5",
     "cz-conventional-changelog": "2.1.0",
+    "ghooks": "2.0.4",
     "mocha": "5.2.0",
     "semantic-release": "^15.12.2",
     "travis-deploy-once": "^5.0.9"
@@ -39,6 +40,9 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks":{
+      "pre-commit":"npm run test:single"
     }
   }
 }
