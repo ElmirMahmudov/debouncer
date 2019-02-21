@@ -1,4 +1,4 @@
-debouncer
+debouncer factory
 =============
 
 [![Build Status](https://travis-ci.org/ArtskydJ/debouncer.svg)](https://travis-ci.org/ArtskydJ/debouncer)
